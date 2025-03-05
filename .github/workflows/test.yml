@@ -3,13 +3,13 @@ name: Test Build
 on:
 #  push:
 #    branches:
-#      - bach
+#      - main
 #  pull_request:
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,5 +27,5 @@ jobs:
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: com.hkwpc.tvboxph
+          name: com.github.tvbox.osc
           path: ${{ github.workspace }}/apk/*

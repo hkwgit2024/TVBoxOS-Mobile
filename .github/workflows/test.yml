@@ -2,8 +2,8 @@ name: Test Build
 
 on:
 #  push:
-#    branches:
-#      - main
+    branches:
+      - bach
 #  pull_request:
   workflow_dispatch:
 

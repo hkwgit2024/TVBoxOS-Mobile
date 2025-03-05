@@ -2,8 +2,8 @@ name: Test Build
 
 on:
 #  push:
-    branches:
-      - bach
+#    branches:
+#      - bach
 #  pull_request:
   workflow_dispatch:
 
@@ -27,5 +27,5 @@ jobs:
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: com.github.tvbox.osc
+          name: com.hkwpc.tvboxph
           path: ${{ github.workspace }}/apk/*
